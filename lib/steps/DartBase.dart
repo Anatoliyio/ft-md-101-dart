@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:ft_md_101_dart/ClassInstance.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task8.dart';
 import 'package:ft_md_101_dart/steps/tasks/task1.dart';
+import 'package:ft_md_101_dart/steps/tasks/task10.dart';
 import 'package:ft_md_101_dart/steps/tasks/task2.dart';
 import 'package:ft_md_101_dart/steps/tasks/task3.dart';
 import 'package:ft_md_101_dart/steps/tasks/task4.dart';
@@ -53,7 +54,8 @@ class DartBase{
     // Task6().run();
     // Task7().run();
     // Task8().run();
-    Task9().run();
+    // Task9().run();
+    Task10().run();
   }
 
   void _stepConf(){
