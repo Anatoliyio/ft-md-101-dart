@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:ft_md_101_dart/ClassInstance.dart';
+import 'package:ft_md_101_dart/steps/tasks/Task8.dart';
 import 'package:ft_md_101_dart/steps/tasks/task1.dart';
 import 'package:ft_md_101_dart/steps/tasks/task2.dart';
 import 'package:ft_md_101_dart/steps/tasks/task3.dart';
@@ -49,7 +50,8 @@ class DartBase{
     // Task4().run();
     // Task5().run();
     // Task6().run();
-    Task7().run();
+    // Task7().run();
+    Task8().run();
   }
 
   void _stepConf(){
