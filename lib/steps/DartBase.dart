@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:ft_md_101_dart/ClassInstance.dart';
+import 'package:ft_md_101_dart/steps/utils/DartAbstractChild.dart';
+import 'package:ft_md_101_dart/steps/utils/DartAbstractParent.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartConstuctor.dart';
 import 'package:ft_md_101_dart/steps/utils/DartEnum.dart';
@@ -30,6 +32,7 @@ class DartBase{
     _stepFinal();
     _stepDartEnum();
     _stepInterface();
+    _stepAbstract();
   }
 
   void _stepConf(){
@@ -204,4 +207,8 @@ class DartBase{
     dip.printMe();
   }
 
+  void _stepAbstract(){
+    DartAbstractChild dac = DartAbstractChild();
+    dac.printMe();
+  }
 }
