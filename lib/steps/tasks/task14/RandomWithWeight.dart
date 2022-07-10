@@ -31,10 +31,16 @@ class RandomWithWeight{
       {
         maxRandomValue += WeightArr[i];
       }
+
     RandomValue = Random().nextInt(maxRandomValue-1);
     for(int i = 0; i < WeightArr.length; i++)
     {
-      if( RandomValue < WeightArr[i] )
+      value = 0;
+      for(int j = 0; j <= i; j++)
+        {
+          value += WeightArr[j];
+        }
+      if( RandomValue < value )
         {
           return valueArr[i];
         }
