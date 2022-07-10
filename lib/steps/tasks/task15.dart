@@ -9,13 +9,15 @@ class Task15 extends TaskInterface {
     var TimerBinarySearch = Stopwatch();
     List<int> intArray = List<int>.generate(100000000, (index) => index);
 
+    //intArray.remove(100000);
+
     TimerPlainSearch.start();
-    plainSearch(intArray, 1000000);
+    plainSearch(intArray, 100000);
     TimerPlainSearch.stop();
     print('Plain search time : ${TimerPlainSearch.elapsedMicroseconds}');
 
     TimerBinarySearch.start();
-    binarySearch(intArray, 1000000);
+    binarySearch(intArray, 100000);
     TimerBinarySearch.stop();
     print('Binary search time : ${TimerBinarySearch.elapsedMicroseconds}');
 
@@ -34,7 +36,9 @@ class Task15 extends TaskInterface {
             print('plain Search : found!');
             return;
           }
+
       }
+    print('plaint Search : not found');
   }
 
 
@@ -48,12 +52,7 @@ class Task15 extends TaskInterface {
 
       position = (first + last) ~/ 2;
 
-    while ((intArr[position] != value) && (first <= last)) {
-      // if (intArr[position] > value) {
-      //   last = position - 1;
-      // } else {
-      //   first = position + 1;
-      // }
+    while ((intArr[position] != value) && (first < last)) {
       if (intArr[position] > value)
         {
           last = position;
@@ -64,7 +63,8 @@ class Task15 extends TaskInterface {
         position = ((first + last) ~/ 2) as int;
 
     }
-    if (first <= last) {
+
+    if (first < last) {
       print("Binary search: found!");
     } else {
       print("Binary search : not found");
