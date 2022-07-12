@@ -16,6 +16,7 @@ import 'package:ft_md_101_dart/steps/tasks/task19.dart';
 import 'package:ft_md_101_dart/steps/tasks/task2.dart';
 import 'package:ft_md_101_dart/steps/tasks/task20.dart';
 import 'package:ft_md_101_dart/steps/tasks/task21.dart';
+import 'package:ft_md_101_dart/steps/tasks/task22.dart';
 import 'package:ft_md_101_dart/steps/tasks/task3.dart';
 import 'package:ft_md_101_dart/steps/tasks/task4.dart';
 import 'package:ft_md_101_dart/steps/tasks/task5.dart';
@@ -77,7 +78,8 @@ class DartBase{
     // Task18().run();
     // Task19().run();
     // Task20().run();
-    Task21().run();
+    // Task21().run();
+    Task22().run();
   }
 
   void _stepConf(){
